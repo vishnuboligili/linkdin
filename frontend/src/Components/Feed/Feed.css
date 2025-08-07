@@ -1,0 +1,99 @@
+/* Main Feed Container */
+.feed-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f0f2f5; /* Light page background */
+  min-height: 100vh;
+}
+
+/* Post Card Styling */
+.feed-post-card {
+  background: linear-gradient(145deg, #ffffff, #f8f9fa); /* Soft gradient */
+  margin-bottom: 20px;
+  border-radius: 14px;
+  padding: 18px 22px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feed-post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Header with image and username */
+.feed-post-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+/* Profile Image or Default Icon */
+.feed-post-user-image,
+.default-feed-user-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #0a66c2;
+}
+
+/* Username and date container */
+.feed-user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Username */
+.feed-username {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Date */
+.feed-date {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Post Content */
+.feed-post-content {
+  margin-top: 12px;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .feed-container {
+    padding: 12px;
+  }
+
+  .feed-post-card {
+    padding: 14px 16px;
+  }
+
+  .feed-post-user-image,
+  .default-feed-user-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .feed-username {
+    font-size: 0.95rem;
+  }
+
+  .feed-date {
+    font-size: 0.75rem;
+  }
+
+  .feed-post-content {
+    font-size: 0.95rem;
+  }
+}

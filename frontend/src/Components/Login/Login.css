@@ -1,0 +1,125 @@
+/* Overall Page Layout */
+
+  /* Container Centering */
+  .login-container {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Form Box */
+  .login-form {
+    background-color: #f2f2f2; /* Light gray background */
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Input Wrapper with Icons */
+  .input-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-wrapper input {
+    width: 100%;
+    padding: 12px 40px 12px 36px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  .input-wrapper input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+  }
+  
+  .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 18px;
+  }
+  
+  /* Position Icons */
+  .input-wrapper .icon {
+    left: 10px;
+  }
+  
+  .password-toggle {
+    right: 10px;
+    left: auto;
+    cursor: pointer;
+  }
+  
+  /* Button */
+  button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error and Success */
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  
+  .success {
+    color: green;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  /* Sign-up text */
+  .signup-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .signup-text a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .signup-text a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Author Info */
+  .author-info {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 20px;
+    color: #777;
+  }
+  

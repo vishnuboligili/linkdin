@@ -1,0 +1,35 @@
+.user-profile-container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .user-profile-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .user-profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  .user-profile-posts .user-post-card {
+    background: #f8f8f8;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .user-post-date {
+    font-size: 0.85rem;
+    color: #888;
+  }
+  
+  .user-post-content {
+    margin-top: 5px;
+  }
+  

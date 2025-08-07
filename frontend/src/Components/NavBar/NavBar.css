@@ -1,0 +1,139 @@
+/* General navbar layout */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 16px;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Left: LinkedIn icon */
+.navbar-left {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.linkedin-logo {
+  font-size: 28px;
+  color: #0a66c2;
+  cursor: pointer;
+}
+
+/* Center: Search bar */
+.navbar-center {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #0a66c2;
+}
+
+/* Right: Profile picture or icon */
+.navbar-right {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.profile-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-profile-image {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #0a66c2;
+  transition: transform 0.2s;
+}
+
+.nav-profile-image:hover {
+  transform: scale(1.05);
+}
+
+.profile-icon:hover {
+  opacity: 0.8;
+}
+
+/* Search Dropdown */
+.search-dropdown {
+  position: absolute;
+  background-color: white;
+  width: 250px;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.search-dropdown li {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.search-dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+.search-user-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .navbar {
+    flex-wrap: nowrap;
+    gap: 8px;
+    padding: 8px 10px;
+  }
+
+  .linkedin-logo {
+    font-size: 22px;
+  }
+
+  .search-input {
+    max-width: 200px;
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+
+  .nav-profile-image {
+    width: 30px;
+    height: 30px;
+  }
+
+  .search-dropdown {
+    width: 200px;
+  }
+}

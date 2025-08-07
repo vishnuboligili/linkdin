@@ -1,0 +1,75 @@
+/* Page background */
+.otp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Light background */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Larger green OTP box */
+  .otp-box {
+    width: 420px;        /* Increased width */
+    height: 300px;       /* Increased height */
+    background: #2ecc71; /* Green background */
+    padding: 30px 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Title inside the box */
+  .otp-box h2 {
+    margin-bottom: 30px;
+    color: white;
+    font-size: 24px;
+  }
+  
+  /* Row of OTP inputs */
+  .otp-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+  }
+  
+  /* Each OTP digit input */
+  .otp-input {
+    width: 50px;
+    height: 60px;
+    font-size: 24px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .otp-input:focus {
+    outline: none;
+    border-color: #27ae60;
+    box-shadow: 0 0 6px rgba(39, 174, 96, 0.5);
+  }
+  
+  .otp-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px; /* 👈 Adds space between inputs and submit button */
+  }
+  
+  .submit-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    color: #2ecc71;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
